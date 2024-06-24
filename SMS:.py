@@ -10,7 +10,7 @@ class SMS:
         self.Roll_num = Roll_num
     def display_student_info(self):
         print("Student Name:", self.name)
-        print("Department:", self.DP)
+        print("Department:", self.DEP)
         print("Session:", self.session)
         print("Semester:", self.sem)
         print("Date of Birth:", self.DoB)
@@ -65,17 +65,6 @@ class StudentManagementSystem:
                 if student.Roll_num == roll_num:
                     print("Enter updated student details:")
                     student.name = input("Enter updated student's name: ")
-                    student.DEP = input("Enter updated student's department: ")
-
-                    while True:
-                        try:
-                            student.session = int(input("Enter student's session: "))
-                            student.sem = int(input("Enter student's semester: "))
-                            student.DoB = input("Enter student's date of birth (YYYY-MM-DD): ")
-                            student.Roll_num = int(input("Enter student's roll number: "))
-                            break
-                        except ValueError:
-                            print("Invalid input. Please enter valid data.")
 
                     print("Student updated successfully!")
                     return
