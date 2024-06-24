@@ -24,9 +24,6 @@ class StudentManagementSystem:
         
 
     def Create(self):
-      
-      
-        
         print("Enter student details:")
             
         while True:
@@ -103,7 +100,7 @@ class StudentManagementSystem:
 
             try:
                 Select = int(input("Enter your Select: "))
-                break
+                
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
 
@@ -121,8 +118,9 @@ class StudentManagementSystem:
             else:
                 print("Invalid choice. Please try again.")
 sms = StudentManagementSystem()
-sms.Create()
-sms.Retreive()
-sms.Update()
-sms.Delete()
+sms.choose_operation()
+#sms.Create()
+#sms.Retreive()
+#sms.Update()
+#sms.Delete()
 #self, name, DP, session, sem, DOB, Roll_num
