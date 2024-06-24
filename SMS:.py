@@ -102,20 +102,20 @@ class StudentManagementSystem:
             print("5. Exit")
 
             try:
-                choice = int(input("Enter your choice: "))
+                Select = int(input("Enter your Select: "))
                 break
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
 
-            if choice == 1:
+            if Select == 1:
                 sms.Create()
-            elif choice == 2:
+            elif Select == 2:
                 sms.Retreive()
-            elif choice == 3:
+            elif Select == 3:
                 sms.Update()
-            elif choice == 4:
+            elif Select == 4:
                 sms.Delete()
-            elif choice == 5:
+            elif Select == 5:
                 print("Exiting...")
                 break
             else:
