@@ -28,6 +28,9 @@ class StudentManagementSystem:
             
         while True:
             name = input("Enter student's name: ")
+            if not name.isalpha():
+                print("Invalid input. Name should only contain alphabetic characters.")
+                continue
             DEP = input("Enter student's department: ")
 
             while True:
