@@ -3,7 +3,7 @@ class SMS:
     
     def __init__(self, name, DEP, session,sem,DoB,Roll_num):
         self.name = name
-        self.DP = DEP
+        self.DEP = DEP
         self.session = session
         self.sem = sem
         self.DoB = DoB
@@ -68,6 +68,7 @@ class StudentManagementSystem:
 
                     print("Student updated successfully!")
                     return
+                
             print("Student not found.")
     def Delete(self):
         roll_num = int(input("enter roll_num:"))
