@@ -1,56 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.keyboard {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
 }
-
-.output {
-    width: 80%;
-    height: 50px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 20px;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.keyboard-container {
+button {
+    background-color: rgb(104, 104, 255);
+    border: none;
     display: inline-block;
-    padding: 10px;
-    border: 1px solid #3e272755;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: .5rem 1rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
 }
+.delete,
+.enter,
+.space {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.delete { width: 100px; }
+.space { width: 100px; }
+.enter { width: 100px; }
 
-.keyboard-row {
+.textarea {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
+}
+textarea {
+    width: 100%;
+    height: 550px;
+    resize: none;
+    padding: .5rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 2px solid rgb(104, 104, 255);
+    border-radius: .5rem;
 }
 
-.key {
-    padding: 10px 15px;
-    margin: 2px;
-    border: 1px solid #e7a0a0;
-    background-color: #c67d7d;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 3px;
-    user-select: none;
-}
 
-.key.space {
-    width: 200px;
-}
-
-.key:active {
-    background-color: #866464;
-}
