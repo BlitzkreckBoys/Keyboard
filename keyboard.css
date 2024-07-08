@@ -1,41 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
 .output {
-    width: 100%;
+    width: 80%;
     height: 50px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: left;
+    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.keyboard {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 5px;
+.keyboard-container {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #3e272755;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
 .key {
-    padding: 15px;
-    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin: 2px;
+    border: 1px solid #e7a0a0;
+    background-color: #c67d7d;
     cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
     user-select: none;
 }
 
-.key:active {
-    background-color: #ddd;
+.key.space {
+    width: 200px;
 }
 
-.space {
-    grid-column: span 10;
+.key:active {
+    background-color: #866464;
 }
