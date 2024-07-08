@@ -1,0 +1,43 @@
+.center{
+    text-align: center;
+}
+.bg-red{
+    background-color: red;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    background-color: aquamarine;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.flex{
+ display: flex;
+ 
+}
+.flex-col{
+    flex-direction: column;
+}
+.item-center{
+    align-items: center;
+
+}
+.row{
+    margin:8px 0;
+
+}
+.row input{
+    margin: 0 ;
+    font-size: 20px;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    cursor: pointer;
+}

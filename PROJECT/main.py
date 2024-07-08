@@ -1,7 +1,10 @@
-from ClassSMS import SMS
-from MainSMS import StudentManagementSystem
-
+from student_management_system import StudentManagementSystem
 
 def main():
-    mange = StudentManagementSystem()
-    mange.choose_operation()
+    """Main function for student management"""
+   # db_path = '/home/sam/Documents/PROJECT/database.db'
+    sms = StudentManagementSystem()
+    sms.choose_operation()
+
+if __name__ == "__main__":
+    main()
